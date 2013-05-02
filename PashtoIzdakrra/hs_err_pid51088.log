@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=51088, tid=63648
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_10-b18
+# Java VM: Java HotSpot(TM) Client VM (23.6-b04 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x003cb800):  JavaThread "Unknown thread" [_thread_in_vm, id=63648, stack(0x02350000,0x023a0000)]
+
+Stack: [0x02350000,0x023a0000],  sp=0x0239f5dc,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x16f311]
+V  [jvm.dll+0x1694c6]
+V  [jvm.dll+0x2082f]
+V  [jvm.dll+0x208b6]
+V  [jvm.dll+0x2e64d]
+V  [jvm.dll+0x2e8f9]
+V  [jvm.dll+0x77d01]
+V  [jvm.dll+0x780bb]
+V  [jvm.dll+0x129101]
+V  [jvm.dll+0x149baa]
+V  [jvm.dll+0xa997f]
+C  [javaw.exe+0x13ca]
+C  [javaw.exe+0x1e3c]
+C  [javaw.exe+0xa5e3]
+C  [javaw.exe+0xa66d]
+C  [kernel32.dll+0x133aa]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39ef2]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x39ec5]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x003cb800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=63648, stack(0x02350000,0x023a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.139 loading class 0x023c4558 done
+Event: 0.139 loading class 0x023c34a0 done
+Event: 0.139 loading class 0x023c3478
+Event: 0.140 loading class 0x02437838
+Event: 0.146 loading class 0x02437838 done
+Event: 0.146 loading class 0x02437870
+Event: 0.146 loading class 0x02437870 done
+Event: 0.146 loading class 0x0242cef8
+Event: 0.146 loading class 0x0242cef8 done
+Event: 0.146 loading class 0x023c3478 done
+
+
+Dynamic libraries:
+0x003f0000 - 0x0041f000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x77200000 - 0x77380000 	C:\Windows\SysWOW64\ntdll.dll
+0x76380000 - 0x76490000 	C:\Windows\syswow64\kernel32.dll
+0x76750000 - 0x76797000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76200000 - 0x762a0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x767a0000 - 0x7684c000 	C:\Windows\syswow64\msvcrt.dll
+0x75080000 - 0x75099000 	C:\Windows\SysWOW64\sechost.dll
+0x76850000 - 0x76940000 	C:\Windows\syswow64\RPCRT4.dll
+0x748e0000 - 0x74940000 	C:\Windows\syswow64\SspiCli.dll
+0x748d0000 - 0x748dc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x74960000 - 0x74a60000 	C:\Windows\syswow64\USER32.dll
+0x762f0000 - 0x76380000 	C:\Windows\syswow64\GDI32.dll
+0x771d0000 - 0x771da000 	C:\Windows\syswow64\LPK.dll
+0x74fe0000 - 0x7507d000 	C:\Windows\syswow64\USP10.dll
+0x72860000 - 0x729fe000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x750a0000 - 0x750f7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x74cb0000 - 0x74d10000 	C:\Windows\system32\IMM32.DLL
+0x74b80000 - 0x74c4c000 	C:\Windows\syswow64\MSCTF.dll
+0x67db0000 - 0x67e6d000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x627b0000 - 0x62afc000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x71af0000 - 0x71af7000 	C:\Windows\system32\WSOCK32.dll
+0x74fa0000 - 0x74fd5000 	C:\Windows\syswow64\WS2_32.dll
+0x766b0000 - 0x766b6000 	C:\Windows\syswow64\NSI.dll
+0x727a0000 - 0x727d2000 	C:\Windows\system32\WINMM.dll
+0x74e30000 - 0x74e35000 	C:\Windows\syswow64\PSAPI.DLL
+0x74210000 - 0x7421c000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x73290000 - 0x732b0000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x741d0000 - 0x741e3000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+0x72480000 - 0x7256b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:D:\android\adt-bundle-windows-x86\adt-bundle-windows-x86\sdk\platforms\android-17\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 61361 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -classNames com.example.myfirstownapplication.GetWordsTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\XEClient\bin;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Hewlett-Packard\HP ProtectTools Security Manager\Bin\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\MATLAB\R2010a\runtime\win64;C:\Program Files\MATLAB\R2010a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files (x86)\FreeArc\bin;C:\Program Files\Java\jdk1.7.0_10\bin;D:\android\adt-bundle-windows-x86\adt-bundle-windows-x86\eclipse;
+USERNAME=ALI IMRAN
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4073204k(1149256k free), swap 8156824k(2574212k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.6-b04) for windows-x86 JRE (1.7.0_10-b18), built on Nov 28 2012 08:34:29 by "java_re" with unknown MS VC++:1600
+
+time: Wed Apr 17 21:35:46 2013
+elapsed time: 0 seconds
+

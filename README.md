@@ -1,2 +1,0 @@
-Pashto_software
-===============

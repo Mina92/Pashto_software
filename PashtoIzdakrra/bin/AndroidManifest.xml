@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstownapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myfirstownapplication.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MenuActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.myfirstownapplication.Signup_Activity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.myfirstownapplication.Start_Activity" android:screenOrientation="portrait" />        
+        <activity android:name=".AnimalsActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.myfirstownapplication.Basics_Activity" android:screenOrientation="portrait" />
+        <activity android:name=".BodyParts_Activity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.myfirstownapplication.Questions_Activity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.myfirstownapplication.Counting_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Relations_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Verbs_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Sentences_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Colors_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Adjectives_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Nouns_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.ColorInstructions_Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.myfirstownapplication.Animalsinstructions_Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AnimalGameActivity" android:screenOrientation="portrait"/>
+                <activity android:name=".colorGame_Activity" android:screenOrientation="portrait"/>
+        
+        
+        
+    </application>
+
+</manifest>
